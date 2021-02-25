@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  notebook:
+    container_name: app.jupyter.dev
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./data:/home/scientist/data
+      - ./notebooks:/home/scientist/notebooks
