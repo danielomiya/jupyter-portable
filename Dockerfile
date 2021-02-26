@@ -8,6 +8,6 @@ RUN useradd scientist \
 
 USER scientist
 
-WORKDIR /home/scientist
+WORKDIR ${HOME}
 
 ENTRYPOINT ["jupyter", "notebook", "--ip", "0.0.0.0", "--port", "8888"]
