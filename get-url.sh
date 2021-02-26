@@ -1,0 +1,1 @@
+docker logs $(docker ps -q --filter="ancestor=continuumio/anaconda3")
